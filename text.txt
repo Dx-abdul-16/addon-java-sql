@@ -1,2 +1,0 @@
-print all even 1 and 100
-
