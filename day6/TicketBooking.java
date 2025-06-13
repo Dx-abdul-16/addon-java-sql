@@ -1,6 +1,3 @@
-
-package constructor;
-
 import java.io.*;
 
 class TicketBooking {
@@ -8,7 +5,7 @@ class TicketBooking {
 	    public synchronized void bookTicket(String userName, int seatsRequested) {
 	        System.out.println(userName + " is trying to book " + seatsRequested + " seat(s).");
 	        try {
-	            File f = new File("C:\\Users\\alwin\\OneDrive\\Desktop\\TicketBooking.txt");
+	            File f = new File(".\TicketBooking.txt");
 
 	            if (f.createNewFile()) {
 	                System.out.println("File created: " + f.getName());
