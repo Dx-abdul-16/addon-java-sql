@@ -6,7 +6,7 @@ public class Cal {
 
 		        Scanner scanner = new Scanner(System.in);
 
-		        // Prompt user for input
+		      
 		        System.out.print("Enter Principal Amount (P): ");
 		        double principal = scanner.nextDouble();
 
