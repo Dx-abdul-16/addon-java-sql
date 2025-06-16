@@ -56,3 +56,21 @@ mysql> select*
 | 232284 | ash  | photoshop | 100000 | 2022-04-02 |
 +--------+------+-----------+--------+------------+
 1 row in set (0.00 sec)
+
+mysql> rename  TABLE emp to EMPLOYEES;
+Query OK, 0 rows affected (0.02 sec)
+
+
+mysql> select*
+    -> from EMPLOYEES;
++--------+-------+-----------+---------+------------+
+| emp_id | name  | dept      | salary  | joindate   |
++--------+-------+-----------+---------+------------+
+| 232283 | kumar | ACCOUNT   |   30000 | 2010-12-04 |
+| 232284 | ash   | photoshop |  105000 | 2022-04-02 |
+| 232285 | surya | developer | 2305000 | 2022-06-03 |
++--------+-------+-----------+---------+------------+
+3 rows in set (0.00 sec)
+
+
+
