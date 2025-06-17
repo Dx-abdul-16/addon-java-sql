@@ -1,0 +1,3 @@
+select *,  sal*12 'Annual_salary' from EMPLOYEES
+    -> where dept  not in ('ANALYST', 'MANAGER');
+ERROR 1054 (42S22): Unknown column 'sal' in 'field list'
