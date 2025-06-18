@@ -337,12 +337,42 @@ mysql> select* from emp right outer join dept
 
 
 
+.........................................................................................................................................
 
+	employee and his manager name if employee working:-
+	e1=employee details
+	e2= reporting manger details
+	
+mysql> select e1.ename emp_name, e2.ename mrg_name
+    -> from emp e1, emp e2
+    -> where e1.mgr = e2.empno AND e1.job='clerk';
++----------+----------+
+| emp_name | mrg_name |
++----------+----------+
+| JAMES    | BLAKE    |
+| MILLER   | CLARK    |
+| ADAMS    | SCOTT    |
+| SMITH    | FORD     |
++----------+----------+
+4 rows in set (0.00 sec)
+	
 
-
-
-
-
+......................................................................................................................
+	manager both earn more than 2300
+	
+mysql> select e1.ename emp_name, e2.sal mgr_sal
+    -> from emp e1 , emp e2
+    -> where e1.mgr=e2.empno and e2.sal>2300 and e1.sal>2300;
++----------+---------+
+| emp_name | mgr_sal |
++----------+---------+
+| FORD     | 2975.00 |
+| SCOTT    | 2975.00 |
+| CLARK    | 5000.00 |
+| BLAKE    | 5000.00 |
+| JONES    | 5000.00 |
++----------+---------+
+5 rows in set (0.00 sec)
 
 
 
