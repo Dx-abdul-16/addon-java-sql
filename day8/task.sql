@@ -20,10 +20,8 @@ CREATE TABLE Registrations (
     registration_id INT PRIMARY KEY ,
     student_id INT,
     course_id INT,
-    registration_date DATE DEFAULT CURRENT_DATE,
-    FOREIGN KEY (student_id)  Students(student_id),
-    FOREIGN KEY (course_id) Courses(course_id),
-    UNIQUE(student_id, course_id) 
+    registration_date DATE DEFAULT CURRENT_DATE
+    
 );
 
 
