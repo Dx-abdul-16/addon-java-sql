@@ -8,7 +8,7 @@ CREATE TABLE Books (
 
 
 CREATE TABLE Members (
-    MemberID INT  PRIMARY KEY,
+    MemberID INT ,
     Name VARCHAR(100),
     Email VARCHAR(100),
     JoinDate DATE
@@ -32,10 +32,10 @@ select * from Books;
 +--------+-----------------------+---------------------+-----------+---------------+
 6 rows in set (0.00 sec)
 
-INSERT INTO Members (Name, Email, JoinDate) VALUES
-('lee', 'lee@gmail.com', '2023-01-15'),
-('ash', 'ash@gmail.com', '2023-03-22'),
-('kumar', 'kumar@.com', '2023-05-10');
+INSERT INTO Members (MemberID,Name, Email, JoinDate) VALUES
+(1,'lee', 'lee@gmail.com', '2023-01-15'),
+(2,'ash', 'ash@gmail.com', '2023-03-22'),
+(3,'kumar', 'kumar@.com', '2023-05-10');
 
 
 
