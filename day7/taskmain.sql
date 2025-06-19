@@ -20,8 +20,6 @@ CREATE TABLE Loans (
     MemberID INT,
     LoanDate DATE,
     ReturnDate DATE,
-    FOREIGN KEY (BookID) REFERENCES Books(BookID),
-    FOREIGN KEY (MemberID) REFERENCES Members(MemberID)
 );
 
 INSERT INTO Books (Title, Author, Genre, YearPublished) VALUES
