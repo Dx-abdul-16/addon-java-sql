@@ -28,3 +28,11 @@ INSERT INTO Sales (product_id, sale_date, quantity) VALUES
 (1, '2025-06-02', 2),
 (3, '2025-06-02', 7);
 
+SELECT 
+    p.product_name,
+    SUM(s.quantity) AS total_quantity_sold,
+    SUM(s.quantity * p.price) AS total_revenue
+FROM Sales s
+JOIN Products p ON s.product_id = p.product_id
+GROUP BY p.product_name
+ORDER BY total_revenue DESC;
