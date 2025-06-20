@@ -1,5 +1,4 @@
 import java.sql.*;
-import java.util.*;
 
 public class StudentDAO {
     public String url = "jdbc:mysql://localhost:3306/student_db";
